@@ -1,0 +1,314 @@
+/* МЕНЮ */
+
+.menu {
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 15px;
+  outline: 1px solid orange;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.menu-item:hover .menu-link{
+  background-color: violet;
+}
+
+.menu-link {
+  display: block;
+  padding: 15px;
+ 
+  text-decoration: none;
+  background-color: teal;
+  color: white;
+}
+
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+
+  display: none;
+
+}
+
+.submenu-link {
+  display: block;
+  padding: 15px;
+  /* width: 100%; */
+    
+  /* text-decoration: none; */
+  background-color: rgb(166, 194, 194);
+  color: rgb(190, 22, 22);
+ 
+}
+
+.body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  background-color: #FFFFFF
+}
+
+/* HEADER --------------------------------------------------------*/
+.header {
+  border: 1px solid #ECECEC
+}
+
+/* Стили логотипа */
+.logo {
+  color: var(--active-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-right: 93px;
+}
+
+
+/* Стили НАВИГАЦИЯ ---------------------------------------------*/
+.nav-link {
+  color: var(--title-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--active-color);
+}
+
+.nav-link.active {
+  color: var(--active-color);
+} 
+
+.contacts-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--active-color);
+}
+
+/* Геометрия и Сетка флекс НАВИГАЦИЯ */
+.header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  
+}
+
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu .nav-line {
+  margin-right: 50px;
+}
+
+.nav-menu .nav-line:last-child{
+  margin-right: 0px;
+}
+
+.contacts-line {
+  margin-left: 50px;
+}
+
+.contacts-line:first-child {
+  margin-left: 0px;
+}
+
+/* Фон и неконтентные картинки НАВИГАЦИЯ */
+.contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* Псевдоэлементы и амимация НАВИГАЦИЯ */
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  margin-top: 28px;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--bg-button-active);
+  border-radius: 2px;
+
+  opacity: 0;
+  transform: scaleX(0);
+  transition: transform 250ms var(--cubic);
+}
+
+.nav-link.active::after {
+  /* opacity: 1; */
+  transform: scaleX(1);
+}
+
+.nav-link:hover:after {
+
+  /* opacity: 1; */  
+  transform: scaleX(1);
+}
+
+a. {
+  text-decoration: none;
+}
+
+/* ФОРМА */
+textarea {
+  resize: none;
+}
+
+.form {
+  width: 600px;
+  outline: 1 px solid orchid;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+}
+
+.form-fild {
+  /* outline: 1px solid blue; */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fild label {
+  margin-bottom: 5px;
+}
+
+.form-fild input {
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid teal;
+  font-size: 14px;
+}
+
+.form-fild input::placeholder {
+  color: rgb(71, 89, 255);
+}
+
+.group {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.topic-options,
+.radio-options {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.topic-options input[type=checkbox] {
+}
+
+.topic-options li {
+  display: flex;
+  align-items: center;
+}
+
+.topic-options label {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.form .date {
+  border-color: red;
+}
+
+
+.form-fild {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: rgb(143, 83, 10);
+  transform: translateY(-50%);
+
+  transition: transform 500ms;
+}
+
+.form-input:focus + .form-label,
+.form-input:hover + .form-label, 
+.form-input:not(:placeholder-shown) + .form-label {
+  color: red;
+  transform: translateY(-40px) translateX(-20px);
+}
+
+.form-input:placeholder-shown {
+  /* background-color: cadetblue; */
+}
+
+.icon-form {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 50%;
+  left: 4px;
+  background-color: coral;
+  display: inline-block;
+
+  transform: translateY(-50%);
+}
+
+.form-input:focus ~ .icon-form {
+  background-color: thistle;
+}
+
+/* focus-within */
