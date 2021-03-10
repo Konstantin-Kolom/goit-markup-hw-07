@@ -807,6 +807,14 @@ a {
   line-height: 1.19;
 }
 
+.footer-list {
+  margin-top: 9px;
+}
+
+.footer-item:last-child {
+  margin-top: 9px;
+}
+
 .footer-link {
   display: block;
   color: rgba(255, 255, 255, 0.6);
@@ -814,7 +822,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
-  margin-top: 9px;
 }
 
 .join-foter {

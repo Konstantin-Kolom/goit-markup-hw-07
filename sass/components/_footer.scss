@@ -25,6 +25,14 @@
   line-height: 1.19;
 }
 
+.footer-list {
+  margin-top: 9px;
+}
+
+.footer-item:last-child {
+  margin-top: 9px;
+}
+
 .footer-link {
   display: block;
   color: $link-color-footer;
@@ -32,7 +40,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
-  margin-top: 9px;
+  // margin-top: 9px;
 }
 
 
@@ -151,3 +159,4 @@
   height: 24px;
   fill: $text-active-color;
 }
+
