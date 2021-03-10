@@ -49,12 +49,12 @@
   text-transform: uppercase;  
 }
   
-.list-join {
+.join-list {
   display: inline-flex;
   margin-top: 20px;
 }
 
-.item-join {
+.join-item {
   margin-right: 10px;
   
   &:last-child {
@@ -120,7 +120,7 @@
    
 }
 
-.btn-footer-form {
+.footer-form-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -144,7 +144,7 @@
   cursor: pointer;
 }
 
-.btn-icon-footer {
+.footer-btn-icon {
   display: block;
   margin-left: 10px;
   width: 24px;

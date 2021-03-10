@@ -1,5 +1,5 @@
 /*Стилизация Кнопки - ПОРТФОЛИО*/
-.btn-link {
+.filter-link {
   color: $button-color;
   background-color: $bg-button;
   font-family: inherit;
@@ -32,16 +32,18 @@
 }
 
 /* Кнопки - Геометрия и Флекс сетка ПОРФОЛИО*/
-.btn-filter {
-  margin-top: 94px;
+.filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.btn-list {
+.filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.btn-line {
+.filter-item {
   margin-right: 8px;
 
   &:last-child {
@@ -51,8 +53,8 @@
 
 /*Разработки - Геометрия и Флекс сетка ПОРФОЛИО*/
 .program-box {
-  padding-top: 50px;
-  padding-bottom: 94px;
+  // padding-top: 50px;
+  // padding-bottom: 94px;
 }
 
 .program-title {
@@ -95,7 +97,7 @@
     transition: box-shadow $time-cubic;
   }
 
-  &:hover .overflow-program {
+  &:hover .program-overflow {
     opacity: 1;
     transform: translateY(0);
     transition: transform $time-cubic, opacity $time-cubic;
@@ -103,7 +105,7 @@
   }
 }
 
-.progpam-description {
+.program-description {
   border-style: solid;
   border-width: 1px;
   border-color: #EEEEEE;
@@ -111,12 +113,12 @@
 }
 
 /* Псевдоэлементы и амимация ПОРФОЛИО - программы*/
-.program-imgdiv {
+.program-box {
   position: relative;
   overflow: hidden;
 } 
 
-.overflow-program {
+.program-overflow {
   position: absolute;
   background-color: $program-active-bg;
   left: 0;

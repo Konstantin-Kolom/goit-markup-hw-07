@@ -115,12 +115,13 @@
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.work-box {
-  display: inline-block;
-  margin-top: 50px;
-}
+// .work-box {
+//   display: inline-block;
+//   margin-top: 50px;
+// }
 
 .work-list {
   display: flex;
@@ -170,27 +171,28 @@
   background-color: #F5F4FA;;
 }
 
-.title-staff {
+.staff-title {
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.staff-box {
-  display: inline-block;
-  margin-top: 50px;
-}
+// .staff-box {
+//   display: inline-block;
+//   margin-top: 50px;
+// }
 
-.list-staff {
+.staff-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * #{$card-marg-size});
   margin-left: calc(-1 * #{$card-marg-size});
 }
 
-.li-staff {
+.staff-item {
   flex-basis: calc(100% / 4 - #{$card-marg-size});
   margin-left: $card-marg-size;
   margin-top: $card-marg-size;
@@ -209,7 +211,7 @@
   padding: 30px 32px;
 }
 
-.employee-title {
+.staff-name {
   color: $title-color;
   font-weight: 500;
   font-size: 16px;
@@ -217,7 +219,7 @@
   text-align: center;
 }
 
-.employee-position {
+.staff-position {
   color: $text-color;
   font-weight: 400;
   font-size: 16px;
@@ -226,13 +228,13 @@
   margin-top: 10px;
 }
 
-.icon-staff-box {
+.contacts-box {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
 }
 
-.icon-btn {
+.contacts-icon {
   display: inline-flex;
   justify-content: center;
   width: 44px;
@@ -270,12 +272,12 @@
   text-align: center;
 }
 
-.box-clients {
+.clients-box {
   display: inline-block;
   margin-top: 50px;
 }
 
-.list-clients {
+.clients-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;  
@@ -283,7 +285,7 @@
   margin-left: calc(-1 * #{$clients-marg-size});
 }
 
-.item-clients {
+.clients-item {
   display: flex;
   justify-content: center;
   flex-basis: calc(100% / 6 - #{$clients-marg-size});
@@ -292,7 +294,7 @@
   padding: 0;
 }
 
-.link-clients {
+.clients-link {
   width: 166px;
   height: 86px;
 
@@ -310,6 +312,6 @@
   }
 }
 
-.icon-clients {
+.clients-icon {
   fill: currentColor;
 }
